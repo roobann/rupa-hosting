@@ -1,0 +1,433 @@
+/*
+    Template: betop
+    Theme Name: beTop Child Theme
+    Theme URI: http://pearl.stylemixthemes.com/
+    Author: StylemixThemes
+    Author URI: http://stylemixthemes.com/
+    Description: Automotive, Cars, Vehicle, Boat Dealership, Classifieds WordPress Theme by StylemixThemes.
+    Version: 1.0.2
+    License: GNU General Public License v2 or later
+    License URI: http://www.gnu.org/licenses/gpl-2.0.html
+    Tags: one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, editor-style, sticky-post, theme-options
+	Text Domain: motors-child-theme
+*/
+
+.alignnone {
+	margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+	display: block;
+	margin: 5px auto 5px auto;
+}
+
+.alignright {
+	float: right;
+	margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+	float: right;
+	margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+	margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hidden {
+	display: none;
+}
+
+.wp-caption {
+	background: #fff;
+	border: 1px solid #f0f0f0;
+	max-width: 100%; /* Image does not overflow the content area */
+	padding: 5px 3px 10px;
+	text-align: center;
+}
+
+.wp-caption.alignnone {
+	margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+	margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+	margin: 5px 0 20px 20px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.wp-caption img {
+	border: 0 none;
+	height: auto;
+	margin: 0;
+	max-width: 98.5%;
+	padding: 0;
+	width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	margin: 0;
+	padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #eee;
+	clip: auto !important;
+	clip-path: none;
+	color: #444;
+	display: block;
+	font-size: 1em;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
+
+pre {
+	background: #eee;
+	font-family: monospace;
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 24px;
+	max-width: 100%;
+	overflow: auto;
+	padding: 24px;
+}
+
+code {
+	font-family: monospace;
+	color: #c7254e;
+	background-color: #f9f2f4;
+	padding: 2px 4px;
+	border-radius: 4px;
+}
+
+.gallery {
+	margin: 0 auto 18px;
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.gallery .gallery-item {
+	float: left;
+	margin-top: 0;
+	text-align: center;
+	width: 100%;
+	margin-right: 0;
+	margin-left: 0;
+	padding: 0 10px;
+}
+
+.gallery .gallery-item .gallery-icon {
+	margin-bottom: 10px;
+}
+
+.gallery-columns-2 .gallery-item {
+	width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	width: 33.333%;
+}
+
+.gallery-columns-4 .gallery-item {
+	width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	width: 16.666%;
+}
+
+.gallery-columns-7 .gallery-item {
+	width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	width: 11.111%;
+}
+
+.gallery-columns-10 .gallery-item {
+	width: 10%;
+}
+
+.gallery img {
+
+}
+
+.gallery img:hover {
+	background: white;
+}
+
+.gallery-columns-2 .attachment-medium {
+	max-width: 92%;
+	height: auto;
+}
+
+.gallery-columns-4 .attachment-thumbnail {
+	max-width: 84%;
+	height: auto;
+}
+
+.gallery .gallery-caption {
+	color: #888;
+	font-size: 14px;
+	margin: 0 0 12px;
+	line-height: 22px;
+}
+
+.gallery dl, .gallery dt {
+	margin: 0;
+}
+
+.gallery br + br {
+	display: none;
+}
+
+.text-upper {
+	text-transform: uppercase;
+}
+
+.bypostauthor .comment-content {
+	font-style: italic;
+}
+
+
+
+
+
+/* UPD SEPT */
+@media (max-width: 400px) {
+	.course-title-holder {
+		padding-right: 5px;
+	}
+}
+
+
+@media (max-width: 655px) {
+	.course_table tr td.number.number-visible.title, .course_table tr td.title {
+		padding-left: 20px;
+		display: block;
+		width: 100%;
+	}
+	.course_table tr td.stm_badge {
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
+	.course_table tr td .meta {
+		padding-left: 12px;
+	}
+	.course_table tr td.stm_badge .badge_unit {
+		margin-left: 15px;
+	}
+}
+
+.tp-caption .icon_in_btn {
+	text-align: center !important;
+}
+
+
+.stm_archive_product_inner_unit .stm_archive_product_inner_unit_centered .stm_featured_product_price .price h5 {
+	font-weight: normal;
+}
+.widget_stm_recent_posts span.h6 {
+	display: inline !important;
+}
+.widget_stm_recent_posts .cats_w {
+	margin-left: 83px;
+}
+
+.stm_lms_login_wrapper .form-group label span {
+	font-weight: 400;
+	text-transform: none;
+}
+
+#switcher #theme-list #theme-select a {
+	line-height: 28px;
+}
+
+#switcher #theme-list a {
+	line-height: 28px;
+}
+
+#switcher #theme-list ul li {
+	margin-bottom: 0;
+}
+
+.switcher__link {
+	line-height: 15px;
+}
+
+#switcher .close {
+	opacity: 0.5;
+}
+
+#switcher .close a {
+	line-height: 55px !important;
+}
+
+.stm_lms_badge_menu > a {
+	position: relative;
+}
+
+.stm_lms_badge_menu > a:after {
+	content: attr(title);
+	position: absolute;
+	right: -12px;
+	top: -6px;
+	background: #dc1245;
+	color: #fff;
+	padding: 0px 5px;
+	font-size: 8px;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 3px;
+	border-bottom-left-radius: 0;
+	line-height: 14px;
+	/*background: -webkit-linear-gradient(135deg, #EE7752, #E73C7E, #23A6D5, #23D5AB) !important;*/
+	/*background: -o-linear-gradient(135deg, #EE7752, #E73C7E, #23A6D5, #23D5AB) !important;*/
+	/*background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB) !important;*/
+	/*-webkit-animation: Gradient 15s ease infinite;*/
+	/*animation: Gradient 15s ease infinite;*/
+	/*background-size: 400% 400% !important;*/
+}
+
+@media (max-width: 992px) {
+	.stm_lms_badge_menu > a:after {
+		display: none !important;
+	}
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0 50%
+	}
+}
+
+.wp-social-login-widget {
+	float: none !important;
+	margin-bottom: 30px;
+}
+
+.stm-lms-login__top {
+	margin-bottom: 30px;
+	display: flex;
+	align-items: center;
+}
+
+.stm-lms-login__top h3 {
+	margin-bottom: 0;
+	margin-right: 15px;
+}
+
+.stm_lms_demo_login {
+	margin-left: auto;
+}
+
+.stm_lms_demo_login span {
+	color: #aaaaaa;
+}
+
+.stm_lms_demo_login a {
+	text-decoration: underline !important;
+}
+
+.modal-body .wp-social-login-widget {
+	position: absolute;
+	left: 50%;
+	bottom: 16px;
+	margin-left: -33px;
+}
+
+.modal-body .stm_lms_demo_login {
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	position: relative;
+	top: 7px;
+}

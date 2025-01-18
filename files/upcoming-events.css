@@ -1,0 +1,227 @@
+.more-events {
+    color: #000;
+}
+
+.upcoming-events .upcoming-text {
+    padding-top: 27px;
+    margin-bottom: 50px;
+}
+
+.upcoming-events .upcoming-text h2 {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.upcoming-events .upcoming-text .more-events {
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    font-size: 21px;
+    padding-bottom: 3px;
+}
+
+.upcoming-events .upcoming-text .event-description {
+    color: #515254;
+}
+
+.upcoming-events .upcoming-event-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.upcoming-events .upcoming-event-list .upcoming-event-wrap {
+    -ms-flex: 0 0 33.3%;
+    flex: 0 0 33.3%;
+    width: 33.3%;
+    padding: 0 15px;
+}
+
+.upcoming-events .upcoming-event-list .upcoming-event-wrap .upcoming-event > a {
+    display: inline-block;
+    position: relative;
+}
+
+.upcoming-events .upcoming-event-list .upcoming-event-wrap .upcoming-event > a::before {
+    content: '';
+    display: block;
+    width: auto;
+    height: 8px;
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    bottom: -8px;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: .3s;
+}
+
+.upcoming-events .upcoming-event-list .upcoming-event-wrap .upcoming-event > a::after {
+    content: '';
+    display: block;
+    width: auto;
+    height: 16px;
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: -16px;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: .5s;
+}
+
+.upcoming-events .upcoming-event-list .upcoming-event-wrap .upcoming-event__image {
+    transition: .3s;
+}
+
+.upcoming-events .upcoming-event-list .upcoming-event-wrap .upcoming-event__image::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #ffffff;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
+}
+
+.upcoming-events .upcoming-event-list .upcoming-event-wrap .upcoming-event__image.has-image:hover {
+    box-shadow: 0px 21px 65px 0px rgba(0, 0, 0, 0.35);
+}
+
+.upcoming-events .upcoming-event-list .upcoming-event-wrap .upcoming-event__image.has-image .upcoming-event-meta {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.upcoming-events .upcoming-event-list .upcoming-event-wrap .upcoming-event__image.has-image .upcoming-event-meta .event-title {
+    color: #fff;
+    text-align: left;
+}
+
+.upcoming-events .upcoming-event-list .upcoming-event-wrap .upcoming-event__image .upcoming-event-meta {
+    padding: 30px 30px 40px 30px;
+    transition: .3s;
+}
+
+.upcoming-events .upcoming-event-list .upcoming-event-wrap .upcoming-event__image .upcoming-event-meta .event-title {
+    text-align: center;
+    font-size: 19px;
+    text-transform: uppercase;
+    line-height: 20px;
+    transition: .3s;
+}
+
+.upcoming-events .upcoming-event-list .upcoming-event-wrap .upcoming-event__image .upcoming-event-meta .event-date {
+    text-transform: uppercase;
+    color: #000;
+    position: absolute;
+    padding: 10px 12px;
+    line-height: normal;
+    left: -15px;
+    bottom: 20px;
+    min-width: 60px;
+    text-align: center;
+    transition: .3s;
+    opacity: 0;
+}
+
+.upcoming-events .upcoming-event-list .upcoming-event-wrap .upcoming-event__image .upcoming-event-meta .event-date > span {
+    display: block;
+}
+
+.upcoming-events .upcoming-event-list .upcoming-event-wrap .upcoming-event__image .upcoming-event-meta .event-date .day {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.upcoming-events .upcoming-event-list .upcoming-event-wrap .upcoming-event__image .upcoming-event-meta .event-date .month {
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.upcoming-events .upcoming-event-list .upcoming-event-wrap .upcoming-event__image .upcoming-event-meta .event-date .year {
+    font-size: 13px;
+}
+
+.upcoming-events .upcoming-event-list .upcoming-event-wrap .upcoming-event:hover .event-date {
+    opacity: 1 !important;
+}
+
+.upcoming-events .upcoming-event-list .upcoming-event-wrap .upcoming-event:hover .upcoming-event-meta .event-title {
+    transform: translateX(20px);
+}
+
+.upcoming-events .upcoming-event-list .upcoming-event-wrap .upcoming-event:hover > a::before {
+    opacity: 1;
+}
+
+.upcoming-events .upcoming-event-list .upcoming-event-wrap .upcoming-event:hover > a::after {
+    opacity: 1;
+}
+
+@media (max-width: 991px) {
+    .upcoming-events .upcoming-event-list .upcoming-event-wrap {
+        -ms-flex: 0 0 33.3%;
+        flex: 0 0 33.3%;
+        width: 33.3%;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .upcoming-events .upcoming-event-list .upcoming-event-wrap {
+        -ms-flex: 0 0 33.3%;
+        flex: 0 0 33.3%;
+        width: 33.3%;
+        margin-bottom: 30px;
+    }
+
+    .upcoming-events .upcoming-event-list .upcoming-event-wrap .upcoming-event__image .upcoming-event-meta {
+        padding: 20px 20px 35px 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .upcoming-events .upcoming-event-list .upcoming-event-wrap .upcoming-event__image .upcoming-event-meta {
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 530px) {
+    .upcoming-events .upcoming-event-list .upcoming-event-wrap {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        width: 50%;
+    }
+}
+
+@media (max-width: 400px) {
+    .upcoming-events .upcoming-event-list {
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .upcoming-events .upcoming-event-list .upcoming-event-wrap .upcoming-event__image .upcoming-event-meta .event-date {
+        opacity: 1;
+    }
+
+    .upcoming-events .upcoming-event-list .upcoming-event-wrap .upcoming-event__image .upcoming-event-meta {
+        padding-left: 50px !important;
+        padding-bottom: 35px;
+    }
+
+    .upcoming-events .upcoming-event-list .upcoming-event-wrap {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        width: 100%;
+        text-align: center;
+    }
+}

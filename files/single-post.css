@@ -1,0 +1,178 @@
+.stm-single-post.simple {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.stm-single-post.simple .stm-single-post-date {
+    width: 70px;
+    -ms-flex: 0 0 70px;
+    flex: 0 0 70px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.stm-single-post.simple .stm-single-post-date .day {
+    font-size: 35px;
+    line-height: 35px;
+}
+
+.stm-single-post.simple .stm-single-post-date .month {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.stm-single-post.simple .stm-single-post-content {
+    padding-top: 7px;
+    padding-left: 30px;
+    width: calc(100% - 70px);
+    -ms-flex: 0 0 calc(100% - 70px);
+    flex: 0 0 calc(100% - 70px);
+}
+
+.stm-single-post.simple .stm-single-post-content h5 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 23px !important;
+    line-height: 23px !important;
+}
+
+.stm-single-post.simple .stm-single-post-content h5 a:not(:hover) {
+    color: #111829;
+}
+
+.stm-single-post.with_image {
+    position: relative;
+    overflow: hidden;
+}
+
+.stm-single-post.with_image .image-wrap a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.stm-single-post.with_image .image-wrap a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    z-index: 2;
+    transition: .3s;
+}
+
+.stm-single-post.with_image .image-wrap a img {
+    transition: .3s;
+}
+
+.stm-single-post.with_image .content-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: 2;
+    transition: .3s;
+}
+
+.stm-single-post.with_image .content-wrap .stm-single-post-date {
+    width: 70px;
+    -ms-flex: 0 0 70px;
+    flex: 0 0 70px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.stm-single-post.with_image .content-wrap .stm-single-post-date .day {
+    font-size: 35px;
+    line-height: 35px;
+}
+
+.stm-single-post.with_image .content-wrap .stm-single-post-date .month {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.stm-single-post.with_image .content-wrap .stm-single-post-content {
+    padding-top: 7px;
+    padding-left: 30px;
+    width: calc(100% - 70px);
+    -ms-flex: 0 0 calc(100% - 70px);
+    flex: 0 0 calc(100% - 70px);
+    color: #fff;
+}
+
+.stm-single-post.with_image .content-wrap .stm-single-post-content h5 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 23px !important;
+    line-height: 23px !important;
+}
+
+@media (max-width: 480px) {
+    .stm-single-post.with_image .content-wrap .stm-single-post-content h5 {
+        font-size: 16px !important;
+        line-height: 18px !important;
+    }
+}
+
+.stm-single-post.with_image .content-wrap .stm-single-post-content h5 a:not(:hover) {
+    color: #fff;
+}
+
+.stm-single-post.with_image .content-wrap .stm-single-post-content .excerpt {
+    transition: .3s;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+}
+
+.stm-single-post.with_image:hover .image-wrap a:before {
+    opacity: 1;
+}
+
+.stm-single-post.with_image:hover .image-wrap a img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+    #content .stm-single-post .stm-single-post-date {
+        width: 60px;
+        -ms-flex: 0 0 60px;
+        flex: 0 0 60px;
+    }
+
+    #content .stm-single-post .stm-single-post-date .day {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    #content .stm-single-post .stm-single-post-date .month {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .stm-single-post.simple .stm-single-post-content,
+  .stm-single-post.with_image .content-wrap .stm-single-post-content {
+        width: calc(100% - 60px);
+        -ms-flex: 0 0 calc(100% - 60px);
+        flex: 0 0 calc(100% - 60px);
+        padding-left: 20px;
+    }
+}

@@ -1,0 +1,147 @@
+h1, .h1, h2, .h2 {
+    text-transform: none;
+}
+
+@media (min-width: 1440px) {
+    .animation_bg.bg_small.bottom_left .elementor-image:before {
+        left: -98px;
+        bottom: -59px;
+    }
+
+    .animation_bg.bg_small.top_right .elementor-image:before {
+        right: -119px;
+        top: -54px;
+    }
+
+    .animation_bg.bg_small .elementor-image:before {
+        width: 191px;
+        height: 185px;
+    }
+}
+
+.portfolio-wrap .portfolio-single .portfolio-content .head-font {
+    text-transform: none;
+    font-weight: 500;
+}
+
+.wpcf7-form input[type=submit]:not(:hover) {
+    color: #fff !important;
+}
+
+.wpcf7-form input[type=submit] {
+    margin-top: 46px;
+}
+
+.wpcf7-form-control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+    text-align: center;
+}
+
+.wpcf7-form-control::-moz-placeholder {
+  /* Firefox 19+ */
+    text-align: center;
+}
+
+.wpcf7-form-control:-ms-input-placeholder {
+  /* IE 10+ */
+    text-align: center;
+}
+
+.wpcf7-form-control:-moz-placeholder {
+  /* Firefox 18- */
+    text-align: center;
+}
+
+footer .elementor-widget-wp-widget-mc4wp_form_widget h5 {
+    color: #fff;
+}
+
+@media (min-width: 1201px) {
+    .main_intro_cont {
+        padding-bottom: 60px;
+        margin-bottom: 70px;
+    }
+}
+
+body.health_coach .main_intro_cont h1 {
+    color: #000;
+}
+
+.one-post-content .single-thumbnail .sticky-label {
+    color: #fff;
+}
+
+.search-form .search-submit:not(:hover) i {
+    color: #fff;
+}
+
+.trainig-buttons .training-price {
+    color: #fff;
+}
+
+.hidden-labels a:hover:before, .hidden-labels a:hover i {
+    color: #fff !important;
+}
+
+.trainig-buttons a:hover {
+    color: #fff !important;
+}
+
+.portfolio-single .portfolio-img .time-label {
+    color: #fff;
+}
+
+.portfolio-single .portfolio-img .event-date {
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .quantity .quantity-wrap input {
+        background-color: #3ac34361;
+    }
+}
+
+.quantity .quantity-wrap .quantity-control:hover,
+.woocommerce div.product form.cart .single_add_to_cart_button:hover,
+.woocommerce #respond input#submit:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover,
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover,
+.woocommerce button.button.alt:hover,
+.wpcf7-form input[type=submit]:not(:hover),
+.trainig-buttons .read-more:hover,
+.btn.dark:hover,
+.time-label,
+.event-date,
+.search-submit .fa-search:not(:hover),
+body.woocommerce div.product form.cart .single_add_to_cart_button:hover,
+body.woocommerce button.button:hover,
+body.woocommerce button.button.alt:hover,
+.portfolio-wrap > .text-center a.btn.white-c:hover,
+.comment-form input[type="submit"]:not(:hover),
+.portfolio-wrap .btn.sc,
+.woocommerce-cart .woocommerce-cart-form button[name="apply_coupon"]:hover,
+.woocommerce-cart .woocommerce-cart-form .checkout-button:hover,
+.grouped_form .group_table .woocommerce-grouped-product-list-item__price .amount,
+.woocommerce #review_form #respond .form-submit input[type=submit],
+.nav-links a.page-numbers:hover,
+.nav-links .current.page-numbers {
+    color: #fff;
+}
+
+.woocommerce .woocommerce-pagination ul.page-numbers li .page-numbers.next:hover,
+.woocommerce .woocommerce-pagination ul.page-numbers li .page-numbers.current,
+.woocommerce .woocommerce-pagination ul.page-numbers li .page-numbers:hover,
+table thead th {
+    color: #fff;
+}
+
+.coach-calendar__table table th:first-child,
+.coach-calendar__table table td:first-child {
+    color: #fff !important;
+}
+
+.wpcf7-form input[type="text"], .wpcf7-form input[type="tel"], .wpcf7-form input[type="email"], .wpcf7-form input[type="password"], .wpcf7-form input[type="search"] {
+    padding-bottom: 10px;
+}

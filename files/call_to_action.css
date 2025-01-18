@@ -1,0 +1,74 @@
+.call-to-action .row {
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.call-to-action .row .col-lg-4 {
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.call-to-action .row .col-lg-4 > * {
+    margin-bottom: 10px;
+}
+
+.call-to-action .row .col-lg-4 > *:last-child {
+    margin-bottom: 0;
+}
+
+.call-to-action .row .col-lg-8 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.call-to-action .row .col-lg-8 .btn {
+    background-color: #000;
+    border-color: #000;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    margin-right: 30px;
+}
+
+.call-to-action .row .col-lg-8 .btn:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+.call-to-action .row .col-lg-8 .contact-data {
+    font-size: 31px;
+    display: inline-block;
+}
+
+.call-to-action .row .col-lg-8 .contact-data i {
+    margin-right: 7px;
+}
+
+@media (max-width: 768px) {
+    .call-to-action .row {
+        text-align: center;
+    }
+
+    .call-to-action .row .btn {
+        margin-right: 0 !important;
+    }
+
+    .call-to-action .row .col-lg-8 .contact-data {
+        display: block;
+        padding-top: 20px;
+    }
+
+    .call-to-action .row .col-lg-8 .btn {
+        padding: 16px 20px;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 480px) {
+    .call-to-action .row .col-lg-8 .contact-data {
+        font-size: 24px;
+    }
+}

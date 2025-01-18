@@ -1,0 +1,291 @@
+"use strict";
+
+(function ($) {
+  $(document).ready(function () {
+    if ($(window).width() <= 1024) {
+      stmMobileMenu();
+    }
+
+    $('.icon-wrap').each(function () {
+      var imageWrap = $(this).parent().find('.elementor-image');
+      $(this).detach().appendTo(imageWrap);
+    });
+    setTimeout(function () {
+      $('#google-maps-styled').find('.info-window').parent().parent().parent().parent().addClass('infoblock-wrap');
+    }, 4000);
+    $('select:not([disabled])').each(function () {
+      if (!$(this).hasClass('disable-select')) {
+        $(this).select2({
+          width: '100%',
+          minimumResultsForSearch: '-1'
+        });
+      }
+    });
+    $('.price_slider').on('slidechange', function (event, ui) {
+      $('.price_slider').closest('form').trigger('submit');
+    });
+    $('.portfolio-gallery').each(function () {
+      $(this).owlCarousel({
+        nav: true,
+        items: 1,
+        dots: false
+      });
+    });
+    $('.coach-slider').each(function () {
+      $(this).owlCarousel({
+        nav: false,
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 6000,
+        autoplayHoverPause: true
+      });
+    });
+    $('.coach-big-slider').each(function () {
+      $(this).owlCarousel({
+        center: true,
+        items: 1,
+        loop: true,
+        autoplay: true,
+        margin: 30,
+        autoplayTimeout: 6000,
+        autoplayHoverPause: true,
+        dots: false
+      });
+    });
+    $('.training-block-slider').each(function () {
+      $(this).owlCarousel({
+        nav: false,
+        items: 3,
+        dots: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          768: {
+            items: 1
+          },
+          1200: {
+            items: 2
+          },
+          1800: {
+            items: 3
+          }
+        }
+      });
+    });
+    $('.training-block-slider-style_2 .training-slider').each(function () {
+      $(this).owlCarousel({
+        nav: true,
+        items: 5,
+        dots: false,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 6000,
+        autoplayHoverPause: true,
+        margin: 30,
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 2
+          },
+          1000: {
+            items: 3
+          },
+          1200: {
+            items: 3
+          },
+          1600: {
+            items: 5
+          }
+        }
+      });
+    });
+    $('.post_type_carousel.owl-carousel').each(function () {
+      var items = $(this).attr('data-per-row');
+      if (items < 1) items = 1;
+      $(this).owlCarousel({
+        nav: true,
+        items: items,
+        dots: false,
+        responsive: {
+          0: {
+            items: Math.floor(items / 3)
+          },
+          768: {
+            items: Math.floor(items / 2)
+          },
+          1200: {
+            items: items
+          }
+        }
+      });
+    });
+    $('.catergory-tab-link').on('click', function (e) {
+      e.preventDefault();
+      var target = $(this).attr('href');
+      $('.coach-tab').removeClass('active');
+      $('.catergory-tab-link').removeClass('active');
+      $(this).addClass('active');
+      $(target).addClass('active');
+
+      if ($(window).width() < 992) {
+        setTimeout(function () {
+          $([document.documentElement, document.body]).animate({
+            scrollTop: $(target).offset().top
+          }, 500);
+        }, 100);
+      }
+    });
+  });
+  var masonryWrap = $('.portfolio-masonry_grid .row');
+  var masonryTiles = $('.portfolio-masonry_tiles .row');
+
+  function setupIsotope(wrap) {
+    if (typeof imagesLoaded != 'undefined') {
+      wrap.imagesLoaded(function () {
+        wrap.isotope({
+          itemSelector: '.portfolio-single',
+          layoutMode: 'packery',
+          packery: {
+            gutter: 0
+          }
+        });
+      });
+    }
+  }
+
+  setupIsotope(masonryWrap);
+  setupIsotope(masonryTiles);
+
+  function afterAjax(html, wrap) {
+    var $elem = $(html);
+    var elems = [];
+    $elem.each(function (i) {
+      elems.push($elem[i]);
+    });
+    wrap.isotope('insert', elems);
+    setupIsotope(wrap);
+  }
+
+  $('.load-more-portfolio').on('click', function (e) {
+    e.preventDefault();
+    var count = $(this).attr('data-count');
+    var perPage = $(this).attr('data-per-page');
+    var offset = $(this).attr('data-offset');
+    var viewType = $(this).attr('data-view-type');
+    var postType = $(this).attr('data-post-type');
+    loadMorePortfolio(count, perPage, offset, viewType, postType);
+  });
+
+  function loadMorePortfolio(count, perPage, offset, viewType, postType) {
+    $.ajax({
+      url: ajaxurl,
+      dataType: 'json',
+      method: 'post',
+      data: {
+        action: 'betop_load_more_portfolio',
+        count: count,
+        per_page: perPage,
+        offset: offset,
+        view_type: viewType,
+        post_type: postType,
+        security: window.wp_data.betop_load_more_portfolio
+      },
+      beforeSend: function beforeSend() {
+        $('.load-more-portfolio').addClass('loading');
+      },
+      success: function success(data) {
+        if (viewType == 'masonry_grid') {
+          afterAjax(data.posts, masonryWrap);
+        } else if (viewType == 'masonry_tiles') {
+          afterAjax(data.posts, masonryTiles);
+        } else {
+          $('.portfolio-wrap .row').append(data.posts);
+        }
+
+        $('.load-more-portfolio').removeClass('loading');
+        var newOffset = parseInt(offset) + parseInt(perPage);
+        $('.load-more-portfolio').attr('data-offset', newOffset);
+
+        if (newOffset >= count) {
+          $('.load-more-portfolio').hide();
+        }
+      }
+    });
+  } //mobile menu
+
+
+  $('.elementor-header .sm_menu_toggle').on('click', function () {
+    if ($(window).width() <= 1024) {
+      $(this).parent().find('.sm_menu').addClass('open');
+      $(this).parent().find('.close-menu').show();
+    }
+  });
+  $('.sm_menu .close-menu').on('click', function () {
+    if ($(window).width() <= 1024) {
+      $(this).closest('.elementor-header').find('.sm_menu').removeClass('open');
+      $(this).hide();
+    }
+  });
+  $('.elementor-header .sm_nav_menu').on('click', '.arrow', function (e) {
+    if ($(window).width() <= 1024) {
+      console.log('asdasd');
+
+      if ($(this).hasClass('active')) {
+        $(this).parent().removeClass('opened');
+        $(this).closest('li').find('> ul.sub-menu').slideToggle(300);
+        $(this).removeClass('active');
+      } else {
+        $(this).addClass('active');
+        $(this).closest('li').toggleClass('opened');
+        $(this).closest('li').find('> ul.sub-menu').slideToggle(300);
+      }
+    }
+  });
+  $(".elementor-header .sm_nav_menu > li.menu-item-has-children > a").on('click', function (e) {
+    if ($(window).width() <= 1024) {
+      if ($(this).attr('href') == '#' || $(this).attr('href') == '') {
+        e.preventDefault();
+        $(this).closest('li').find(' > ul.sub-menu').slideToggle(300);
+        $(this).closest('li').toggleClass('opened');
+        $(this).closest('li').find('.arrow').toggleClass('active');
+      }
+    }
+  });
+
+  function stmMobileMenu() {
+    if (!$('.elementor-header .sm_nav_menu').hasClass('mobile-init')) {
+      $(".elementor-header .sm_nav_menu li.menu-item-has-children > a").after('<span class="arrow"><i class="fa fa-angle-right"></i></span>');
+    }
+
+    $('.elementor-header .sm_nav_menu').addClass('mobile-init');
+  }
+
+  $(window).on('load', function () {
+    if ($(window).width() >= 1200) {
+      $('.man_sidebar').stickySidebar({
+        bottomSpacing: 40
+      });
+    }
+
+    $('#page').removeClass('unload');
+  });
+  $(window).on('resize', function () {
+    if ($(window).width() >= 1200) {
+      $('.man_sidebar').stickySidebar({
+        bottomSpacing: 40
+      });
+    } else {
+      $('.man_sidebar').stickySidebar('destroy');
+    }
+
+    if ($(window).width() <= 1024) {
+      stmMobileMenu();
+    }
+  });
+})(jQuery);

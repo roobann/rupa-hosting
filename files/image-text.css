@@ -1,0 +1,10 @@
+.image-text {
+    position: relative;
+}
+
+.image-text-text {
+    position: absolute;
+    padding: 40px 40px;
+    top: 0;
+    left: 0;
+}

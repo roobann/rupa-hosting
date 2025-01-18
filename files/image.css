@@ -1,0 +1,201 @@
+.animation_bg .elementor-image {
+    display: inline-block;
+    position: relative;
+}
+
+.animation_bg .elementor-image:before {
+    content: '';
+    display: block;
+    position: absolute;
+    transition: .3s;
+    transition-timing-function: ease-in-out;
+    z-index: 1;
+}
+
+.animation_bg .elementor-image img {
+    position: relative;
+    transition: .3s;
+    transition-timing-function: ease-in-out;
+    z-index: 2;
+}
+
+.animation_bg.bg_small .elementor-image:before {
+    width: 40%;
+    height: 40%;
+}
+
+.animation_bg.bg_small.top_left .elementor-image:before {
+    left: -20px;
+    top: -20px;
+}
+
+.animation_bg.bg_small.top_left .elementor-image:hover img {
+    transform: translate3d(-3px, -3px, -3px);
+}
+
+.animation_bg.bg_small.top_left .elementor-image:hover:before {
+    transform: translate3d(3px, 3px, 3px);
+}
+
+.animation_bg.bg_small.top_right .elementor-image:before {
+    right: -20px;
+    top: -20px;
+}
+
+.animation_bg.bg_small.top_right .elementor-image:hover img {
+    transform: translate3d(3px, -3px, -3px);
+}
+
+.animation_bg.bg_small.top_right .elementor-image:hover:before {
+    transform: translate3d(3px, 3px, 3px);
+}
+
+.animation_bg.bg_small.bottom_right .elementor-image:before {
+    right: -20px;
+    bottom: -20px;
+}
+
+.animation_bg.bg_small.bottom_right .elementor-image:hover img {
+    transform: translate3d(3px, 3px, -3px);
+}
+
+.animation_bg.bg_small.bottom_right .elementor-image:hover:before {
+    transform: translate3d(-3px, -3px, 3px);
+}
+
+.animation_bg.bg_small.bottom_left .elementor-image:before {
+    left: -20px;
+    bottom: -20px;
+}
+
+.animation_bg.bg_small.bottom_left .elementor-image:hover img {
+    transform: translate3d(-3px, 3px, -3px);
+}
+
+.animation_bg.bg_small.bottom_left .elementor-image:hover:before {
+    transform: translate3d(3px, -3px, 3px);
+}
+
+.animation_bg.bg_medium .elementor-image:before {
+    width: 60%;
+    height: 60%;
+}
+
+.animation_bg.bg_medium.top_left .elementor-image:before {
+    left: -25px;
+    top: -25px;
+}
+
+.animation_bg.bg_medium.top_left .elementor-image:hover img {
+    transform: translate3d(-4px, -4px, -4px);
+}
+
+.animation_bg.bg_medium.top_left .elementor-image:hover:before {
+    transform: translate3d(4px, 4px, 4px);
+}
+
+.animation_bg.bg_medium.top_right .elementor-image:before {
+    right: -25px;
+    top: -25px;
+}
+
+.animation_bg.bg_medium.top_right .elementor-image:hover img {
+    transform: translate3d(4px, -4px, -4px);
+}
+
+.animation_bg.bg_medium.top_right .elementor-image:hover:before {
+    transform: translate3d(4px, 4px, 4px);
+}
+
+.animation_bg.bg_medium.bottom_right .elementor-image:before {
+    right: -25px;
+    bottom: -25px;
+}
+
+.animation_bg.bg_medium.bottom_right .elementor-image:hover img {
+    transform: translate3d(4px, 4px, -4px);
+}
+
+.animation_bg.bg_medium.bottom_right .elementor-image:hover:before {
+    transform: translate3d(-4px, -4px, 4px);
+}
+
+.animation_bg.bg_medium.bottom_left .elementor-image:before {
+    left: -25px;
+    bottom: -25px;
+}
+
+.animation_bg.bg_medium.bottom_left .elementor-image:hover img {
+    transform: translate3d(-4px, 4px, -4px);
+}
+
+.animation_bg.bg_medium.bottom_left .elementor-image:hover:before {
+    transform: translate3d(4px, -4px, 4px);
+}
+
+.animation_bg.bg_large .elementor-image:before {
+    width: 95%;
+    height: 95%;
+}
+
+.animation_bg.bg_large.top_left .elementor-image:before {
+    left: -30px;
+    top: -30px;
+}
+
+.animation_bg.bg_large.top_left .elementor-image:hover img {
+    transform: translate3d(-5px, -5px, -5px);
+}
+
+.animation_bg.bg_large.top_left .elementor-image:hover:before {
+    transform: translate3d(5px, 5px, 5px);
+}
+
+.animation_bg.bg_large.top_right .elementor-image:before {
+    right: -30px;
+    top: -30px;
+}
+
+.animation_bg.bg_large.top_right .elementor-image:hover img {
+    transform: translate3d(5px, -5px, -5px);
+}
+
+.animation_bg.bg_large.top_right .elementor-image:hover:before {
+    transform: translate3d(5px, 5px, 5px);
+}
+
+.animation_bg.bg_large.bottom_right .elementor-image:before {
+    right: -30px;
+    bottom: -30px;
+}
+
+.animation_bg.bg_large.bottom_right .elementor-image:hover img {
+    transform: translate3d(5px, 5px, -5px);
+}
+
+.animation_bg.bg_large.bottom_right .elementor-image:hover:before {
+    transform: translate3d(-5px, -5px, 5px);
+}
+
+.animation_bg.bg_large.bottom_left .elementor-image:before {
+    left: -30px;
+    bottom: -30px;
+}
+
+.animation_bg.bg_large.bottom_left .elementor-image:hover img {
+    transform: translate3d(-5px, 5px, -5px);
+}
+
+.animation_bg.bg_large.bottom_left .elementor-image:hover:before {
+    transform: translate3d(5px, -5px, 5px);
+}
+
+.icon-overlay .elementor-image {
+    position: relative;
+    display: inline-block;
+}
+
+.icon-overlay .elementor-image .icon-wrap {
+    position: absolute;
+    z-index: 2;
+}

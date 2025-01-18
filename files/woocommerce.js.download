@@ -1,0 +1,87 @@
+"use strict";
+
+(function ($) {
+  $(document).ready(function () {
+    $('.price_slider').on('slidechange', function (event, ui) {
+      $('.price_slider').closest('form').submit();
+    });
+    $('.flex-control-nav li').each(function () {
+      $(this).append('<span></span>');
+    });
+    $('body').on('click', '.quantity-wrap .quantity-control', function () {
+      var action = $(this).hasClass('quantity-minus') ? 'minus' : 'plus';
+      var input = $(this).parent().find('input');
+      var step = input.attr('step') ? parseInt(input.attr('step')) : 1;
+      var inputVal = action == 'minus' ? parseInt(input.val()) - step : parseInt(input.val()) + step;
+      inputVal = inputVal < 0 ? 0 : inputVal;
+      input.val(inputVal);
+      input.trigger('change');
+    });
+    $('.grouped_form .quantity input.qty').on('change', function () {
+      $(this).closest('.woocommerce-grouped-product-list-item__quantity').find('.date-reservation input[name=reservation_date]').val('');
+      $(this).closest('.woocommerce-grouped-product-list-item__quantity').find('.message-wrap .unavailable-dates').remove();
+      $(this).closest('.woocommerce-grouped-product-list-item').removeClass('unavailable');
+      $(this).closest('.woocommerce-grouped-product-list-item').find('input[name=reservation_date]').removeClass('available');
+
+      if ($(this).val() > 0) {
+        $(this).closest('.woocommerce-grouped-product-list-item__quantity').find('.date-reservation').addClass('active');
+        $(this).closest('.woocommerce-grouped-product-list-item').addClass('unavailable');
+      } else {
+        $(this).closest('.woocommerce-grouped-product-list-item__quantity').find('.date-reservation').removeClass('active');
+      }
+    });
+    $('body').on('click', '.unavailable-dates', function () {
+      $(this).remove();
+    });
+  });
+  $(window).on('load', function () {
+    if ($(window).width() >= 1200) {
+      $('.woo-sidebar').stickySidebar({
+        bottomSpacing: 40
+      });
+    }
+  });
+  $(window).on('resize', function () {
+    if ($(window).width() >= 1200) {
+      $('.woo-sidebar').stickySidebar({
+        bottomSpacing: 40
+      });
+    } else {
+      $('.woo-sidebar').stickySidebar('destroy');
+    }
+  });
+})(jQuery);
+
+function setCookie(name, value, options) {
+  options = options || {};
+  var expires = options.expires;
+
+  if (typeof expires == "number" && expires) {
+    var d = new Date();
+    d.setTime(d.getTime() + expires * 1000);
+    expires = options.expires = d;
+  }
+
+  if (expires && expires.toUTCString) {
+    options.expires = expires.toUTCString();
+  }
+
+  value = encodeURIComponent(value);
+  var updatedCookie = name + "=" + value;
+
+  for (var propName in options) {
+    updatedCookie += "; " + propName;
+    var propValue = options[propName];
+
+    if (propValue !== true) {
+      updatedCookie += "=" + propValue;
+    }
+  }
+
+  document.cookie = updatedCookie;
+}
+
+function getCookie(name) {
+  var matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
+  return matches ? decodeURIComponent(matches[1]) : undefined;
+}

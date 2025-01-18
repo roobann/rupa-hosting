@@ -1,0 +1,192 @@
+@media (min-width: 1600px) {
+    body.yoga .elementor-column-gap-wider > .elementor-row > .elementor-column > .elementor-element-populated {
+        padding: 10px 120px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .sm_menu_toggle {
+        display: none;
+    }
+
+    .sm_menu_toggle_close {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sidebar-right .one-post-content {
+        padding-right: 30px;
+    }
+
+    .sidebar-left .one-post-content {
+        padding-left: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .elementor-column.stretch-to-left > .elementor-column-wrap {
+        position: relative;
+        padding-left: 370px !important;
+        margin-left: -370px !important;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .elementor-column.stretch-to-right > .elementor-column-wrap {
+        position: relative;
+        padding-right: 370px !important;
+        margin-right: -370px !important;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1200px) {
+    .main_intro_cont {
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+    }
+
+    .main_intro_cont h1 {
+        font-size: 55px;
+        line-height: 58px;
+    }
+
+    .custom-html-widget a.elementor-social-icon {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 991px) {
+    .main_intro_cont {
+        margin-bottom: 40px;
+        padding-bottom: 30px;
+    }
+
+    .main_intro_cont h1 {
+        font-size: 48px;
+        line-height: 50px;
+    }
+
+    .one-post-content {
+        margin-bottom: 60px;
+    }
+
+    .one-post-content .post-excerpt {
+        margin-bottom: 25px;
+    }
+
+    .one-post-content .single-thumbnail {
+        margin-bottom: 25px;
+    }
+
+    .man_sidebar .widget:not(:last-child) {
+        margin-bottom: 60px;
+    }
+
+    .comments-area ol.comment-list li .comment-content {
+        padding-left: 0;
+    }
+
+    .comments-area ol.comment-list li .reply {
+        padding-left: 0;
+    }
+
+    .comments-area ol.comment-list li .comment-meta .comment-author img {
+        width: 50px;
+        margin-right: 20px;
+    }
+
+    .comments-area ol.comment-list li .comment-meta .comment-metadata > a {
+        position: relative;
+    }
+}
+
+@media (max-width: 767px) {
+    .main_intro_cont {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .responsive-hide-border > div {
+        border: none !important;
+    }
+
+    .nav-links .page-numbers {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+    }
+
+    .nav-links .page-numbers.dots {
+        width: 30px;
+    }
+
+    .nav-links .page-numbers.next, .nav-links .page-numbers.prev {
+        font-size: 0;
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        position: relative;
+        margin: 0;
+    }
+
+    .nav-links .page-numbers.next:before, .nav-links .page-numbers.next:after, .nav-links .page-numbers.prev:before, .nav-links .page-numbers.prev:after {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 480px) {
+    .man_sidebar .widget-title {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .main_intro_cont {
+        padding-top: 10px;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+    }
+
+    .gallery .gallery-item {
+        padding: 0 2px;
+    }
+}
+
+@media (min-width: 769px) {
+    .woocommerce .col2-set .col-1, .woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-1, .woocommerce-page .col2-set .col-2 {
+        max-width: 48%;
+        -ms-flex: 0 0 48%;
+        flex: 0 0 48%;
+        width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .woocommerce .col2-set .col-1, .woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-1, .woocommerce-page .col2-set .col-2 {
+        max-width: 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    .comments-area ol.comment-list ol.children {
+        padding-left: 30px;
+    }
+}

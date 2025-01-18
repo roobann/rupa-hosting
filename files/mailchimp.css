@@ -1,0 +1,49 @@
+.elementor-widget-wp-widget-mc4wp_form_widget h5 {
+    margin-bottom: 30px;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.elementor-widget-wp-widget-mc4wp_form_widget .mc4wp-form .mc4wp-form-fields {
+    position: relative;
+}
+
+.elementor-widget-wp-widget-mc4wp_form_widget .mc4wp-form .mc4wp-form-fields input[type="email"] {
+    border-radius: 50px;
+    padding: 16px 20px 15px;
+    font-size: 17px;
+    border-color: #d7d7d7;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.elementor-widget-wp-widget-mc4wp_form_widget .mc4wp-form .mc4wp-form-fields input[type="submit"] {
+    position: absolute;
+    top: -1px;
+    right: 0;
+    padding: 17px 43px;
+    background-color: #000;
+    text-transform: uppercase;
+    border-color: #000;
+    color: #fff;
+}
+
+.elementor-widget-wp-widget-mc4wp_form_widget .mc4wp-form .mc4wp-form-fields input[type="submit"]:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+@media (max-width: 480px) {
+    .elementor-widget-wp-widget-mc4wp_form_widget .mc4wp-form .mc4wp-form-fields input[type="submit"] {
+        padding: 12px 20px;
+        top: 4px;
+        right: 4px;
+        height: 45px;
+    }
+
+    .elementor-widget-wp-widget-mc4wp_form_widget .mc4wp-form .mc4wp-form-fields input[type="email"] {
+        white-space: nowrap;
+        overflow-x: hidden;
+        height: 53px;
+    }
+}

@@ -1,0 +1,68 @@
+.stm-animate-block {
+    position: relative;
+}
+
+.stm-animate-block .animate-bg {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    transition: .4s ease-in-out;
+}
+
+.stm-animate-block .animate-bg.stm-animate-1 {
+    left: 0;
+}
+
+.stm-animate-block .animate-bg.stm-animate-2 {
+    right: 0;
+}
+
+.stm-animate-block .stm-mask {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 4;
+    transition: .4s ease-in-out;
+}
+
+.stm-animate-block .stm-mask.stm-animate-mask-1 {
+    left: 0;
+}
+
+.stm-animate-block .stm-mask.stm-animate-mask-1:hover ~ .stm-animate-1 {
+    z-index: 1;
+    width: 100%;
+}
+
+.stm-animate-block .stm-mask.stm-animate-mask-2 {
+    right: 0;
+}
+
+.stm-animate-block .stm-mask.stm-animate-mask-2:hover ~ .stm-animate-2 {
+    z-index: 1;
+    width: 100%;
+}
+
+.stm-animate-block .stm-animate-text {
+    position: absolute;
+    width: 1200px;
+    max-width: 100%;
+    padding: 0 15px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+}
+
+.stm-animate-block .stm-animate-img {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+}
+
+.stm-animate-block .stm-animate-img img {
+    display: inline-block;
+}

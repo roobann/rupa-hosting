@@ -1,0 +1,103 @@
+.header-slider-wrapper .header-slide {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header-slider-wrapper .header-slide .slide-title {
+    margin-bottom: 55px;
+}
+
+@media (max-width: 1024px) {
+    .header-slider-wrapper .header-slide .slide-title {
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-slider-wrapper .header-slide .slide-title {
+        margin-bottom: 25px;
+    }
+}
+
+.header-slider-wrapper .header-slide .btn {
+    padding: 22px 35px;
+}
+
+@media (max-width: 600px) {
+    .header-slider-wrapper .header-slide .btn {
+        padding: 15px 25px;
+    }
+}
+
+.header-slider-wrapper .header-slider .owl-nav {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 25%;
+    background-color: #fff;
+    padding: 10px 15px 10px 35px;
+}
+
+@media (max-width: 600px) {
+    .header-slider-wrapper .header-slider .owl-nav {
+        width: 45%;
+    }
+}
+
+.header-slider-wrapper .header-slider .owl-nav div {
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0;
+    position: relative;
+}
+
+.header-slider-wrapper .header-slider .owl-nav div:before {
+    font-family: "Font Awesome 5 Free";
+    font-size: 22px;
+    vertical-align: middle;
+    transition: .3s;
+    font-weight: 900;
+}
+
+.header-slider-wrapper .header-slider .owl-nav div.owl-prev:before {
+    content: "\f104";
+}
+
+.header-slider-wrapper .header-slider .owl-nav div.owl-next:before {
+    content: "\f105";
+}
+
+.header-slider-wrapper .header-slider .owl-nav button {
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.header-slider-wrapper .header-slider .owl-nav button span {
+    font-size: 0;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header-slider-wrapper .header-slider .owl-nav button span:before {
+    font-family: "Font Awesome 5 Free";
+    font-size: 22px;
+    vertical-align: middle;
+    transition: .3s;
+}
+
+.header-slider-wrapper .header-slider .owl-nav button.owl-prev span:before {
+    content: "\f104";
+}
+
+.header-slider-wrapper .header-slider .owl-nav button.owl-next span:before {
+    content: "\f105";
+}

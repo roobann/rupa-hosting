@@ -1,0 +1,109 @@
+.login-button {
+    padding: 11px 30px 11px 20px !important;
+    text-transform: none;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.login-button .fa-user-circle-o {
+    display: none;
+}
+
+.login-button.logout {
+    padding-right: 20px !important;
+}
+
+.login-btn-wrap {
+    display: inline-block;
+    position: relative;
+}
+
+.login-btn-wrap .login-button:not(.logout) {
+    position: relative;
+}
+
+.login-btn-wrap .login-button:not(.logout):before {
+    content: "\f078";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    color: #fff;
+    right: 10px;
+    font-size: 14px;
+    top: 11px;
+}
+
+.login-btn-wrap .login-button:not(.logout):hover:before {
+    color: #000;
+}
+
+.login-btn-wrap .dropdown-account {
+    position: absolute;
+    margin: 0;
+    padding-top: 20px;
+    width: 200px;
+    top: calc(100% - 20px);
+    right: 0;
+    text-align: left;
+    list-style-type: none;
+    padding-left: 0;
+    transition: .3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.login-btn-wrap .dropdown-account li {
+    background-color: #000;
+    padding: 0 5px;
+}
+
+.login-btn-wrap .dropdown-account li a {
+    padding: 5px 15px;
+    width: 100%;
+    display: block;
+    font-size: 15px;
+    border-bottom: 1px #ffffff33 solid;
+    position: relative;
+    font-weight: 500;
+}
+
+.login-btn-wrap .dropdown-account li a:not(:hover) {
+    color: #fff;
+}
+
+.login-btn-wrap:hover .dropdown-account {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+.dropdown-account a {
+    color: #fff;
+}
+
+@media (max-width: 991px) {
+    .login-button {
+        padding: 0 !important;
+        font-size: 0 !important;
+        border-radius: 50% !important;
+        width: 44px;
+        height: 44px;
+        position: relative;
+    }
+
+    .login-button .fa-user-circle-o {
+        display: inline-block;
+        font-size: 18px !important;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .login-btn-wrap .login-button:not(.logout):before {
+        display: none;
+    }
+
+    .dropdown-account {
+        display: none;
+    }
+}

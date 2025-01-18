@@ -1,0 +1,36 @@
+.elementor-testimonial-content {
+    position: relative;
+    padding-top: 59px;
+    padding-bottom: 59px;
+    margin-bottom: 0 !important;
+}
+
+.elementor-testimonial-content:before {
+    content: "\e94b";
+    display: inline-block;
+    font-family: 'betop';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 55px;
+    color: #dedede;
+}
+
+.elementor-testimonial-content:after {
+    content: "\e94c";
+    display: inline-block;
+    font-family: 'betop';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 55px;
+    color: #dedede;
+}
+
+.elementor-testimonial-wrapper .elementor-testimonial-meta.elementor-testimonial-image-position-aside .elementor-testimonial-image {
+    padding-right: 24px;
+}
+
+.elementor-testimonial-meta {
+    margin-top: -28px;
+}

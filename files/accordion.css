@@ -1,0 +1,10 @@
+.elementor-accordion-item:not(:last-child) {
+    border-bottom: 1px #ededed solid !important;
+}
+
+.elementor-accordion-item .elementor-accordion-icon {
+    font-size: 28px;
+    margin-top: -3px;
+    height: 33px;
+    display: inline-block;
+}

@@ -1,0 +1,97 @@
+.coach-calendar .title-btn {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.coach-calendar .title-btn h2 {
+    margin-bottom: 18px;
+    margin-right: 20px;
+    margin-top: 0;
+}
+
+.coach-calendar .title-btn .btn {
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    padding: 8px 34px;
+    border-width: 2px;
+    border-style: solid;
+    line-height: 38px;
+}
+
+.coach-calendar__table {
+    overflow-x: auto;
+}
+
+.coach-calendar__table table {
+    width: 100%;
+    min-width: 1170px;
+}
+
+.coach-calendar__table table .no-bg {
+    background: none;
+}
+
+.coach-calendar__table table th {
+    text-align: left;
+}
+
+.coach-calendar__table table th, .coach-calendar__table table td {
+    width: calc((100% - 88px) / 7);
+}
+
+.coach-calendar__table table th:first-child, .coach-calendar__table table td:first-child {
+    width: 88px;
+    color: #000 !important;
+    line-height: normal;
+    font-size: 18px;
+}
+
+.coach-calendar__table table td {
+    font-weight: 400;
+    color: #515254;
+}
+
+.coach-calendar__table table td:first-child {
+    text-align: center;
+}
+
+.coach-calendar__table table tbody tr:nth-child(even) {
+    background-color: #f6f6f6;
+}
+
+.coach-calendar__table table tbody td {
+    padding: 33px 21px;
+}
+
+@media (max-width: 1200px) {
+    .coach-calendar {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .coach-calendar .title-btn .btn {
+        font-size: 18px;
+        padding: 4px 30px;
+    }
+
+    .coach-calendar__table table tbody td {
+        padding: 15px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .coach-calendar .title-btn .btn {
+        font-size: 16px;
+        padding: 4px 30px;
+        line-height: 28px;
+    }
+}

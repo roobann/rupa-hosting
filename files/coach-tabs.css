@@ -1,0 +1,152 @@
+.coach-link a {
+    color: inherit;
+}
+
+.coach-tabs__list {
+    border-bottom: 1px #f2f2f2 solid;
+    text-align: center;
+}
+
+.coach-tabs__list .catergory-tab-link {
+    color: inherit;
+    display: block;
+    padding-bottom: 40px;
+    position: relative;
+    height: 100%;
+}
+
+.coach-tabs__list .catergory-tab-link:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .3s;
+    opacity: 0;
+}
+
+.coach-tabs__list .catergory-tab-link .category-icon {
+    margin-bottom: 20px;
+}
+
+.coach-tabs__list .catergory-tab-link .category-icon i {
+    transition: .3s;
+    font-size: 46px;
+}
+
+.coach-tabs__list .catergory-tab-link .coach-cat-title {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.coach-tabs__list .catergory-tab-link .coach-cat-description {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.coach-tabs__list .catergory-tab-link.active:before, .coach-tabs__list .catergory-tab-link:hover:before {
+    opacity: 1;
+}
+
+.coach-tabs__posts {
+    padding-top: 66px;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.coach-tabs__posts .coach-tab {
+    transition: .3s;
+    display: none;
+}
+
+.coach-tabs__posts .coach-tab.active {
+    display: block;
+}
+
+.coach-tabs__posts .coach-tab .coach-img-wrap {
+    position: relative;
+}
+
+.coach-tabs__posts .coach-tab .coach-img-wrap .coach-price {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    transform: translateX(50%);
+    text-align: center;
+    padding: 30px 30px;
+}
+
+.coach-tabs__posts .coach-tab .coach-img-wrap .coach-price .head-font {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.coach-tabs__posts .coach-tab .coach-img-wrap .coach-price .price-affix {
+    line-height: 28px;
+}
+
+.coach-tabs__posts .coach-tab .coach-content {
+    padding-left: 137px;
+    padding-top: 93px;
+}
+
+.coach-tabs__posts .coach-tab .coach-content h2 {
+    margin-top: 0;
+    margin-bottom: 46px;
+}
+
+.coach-tabs__posts .coach-tab .coach-content .coach-content__excerpt {
+    margin-bottom: 24px;
+}
+
+.coach-tabs__posts .coach-tab .coach-content .coach-link {
+    margin-bottom: 44px;
+}
+
+.coach-tabs__posts .coach-tab .coach-content .coach-link a {
+    border-width: 0 0 2px 0;
+    border-style: solid;
+}
+
+@media (max-width: 767px) {
+    .coach-tabs__list .catergory-tab-link:before {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .coach-tabs__posts .coach-tab .coach-content {
+        padding-left: 0;
+        padding-top: 40px;
+    }
+
+    .coach-tabs__posts .coach-tab .coach-img-wrap .coach-price {
+        transform: none;
+        bottom: 0;
+        top: auto;
+        right: auto;
+        left: 0;
+        padding: 10px;
+    }
+
+    .coach-tabs__posts .coach-tab .coach-img-wrap .coach-price .head-font {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .coach-tabs__posts .coach-tab .coach-img-wrap .coach-price .price-affix {
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .coach-tabs__posts .coach-tab .coach-content h2 {
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+}

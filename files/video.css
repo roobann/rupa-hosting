@@ -1,0 +1,25 @@
+.elementor-custom-embed-play i.eicon-play:before {
+    content: "\e905";
+    font-family: 'betop' !important;
+    font-size: 75px;
+}
+
+.elementor-custom-embed-image-overlay {
+    position: relative;
+}
+
+.elementor-custom-embed-image-overlay:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: .3s;
+}
+
+.elementor-custom-embed-image-overlay:hover:before {
+    opacity: 0;
+}

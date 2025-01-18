@@ -1,0 +1,28 @@
+.elementor-footer .sm_menu .elementor-navigation ul {
+    list-style: none;
+    padding-left: 0;
+    display: inline;
+}
+
+.elementor-footer .sm_menu .elementor-navigation ul li {
+    display: inline;
+}
+
+.elementor-footer .sm_menu .elementor-navigation ul li a {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.18px;
+}
+
+@media (max-width: 480px) {
+    .elementor-footer .sm_menu:not(.full-width-menu) .elementor-navigation ul.sm_nav_menu {
+        display: block;
+        word-break: break-word;
+        margin: 0;
+    }
+}
+
+.elementor-footer .full-width-menu .elementor-navigation .menu-item {
+    display: block;
+    width: 100%;
+}

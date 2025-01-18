@@ -1,0 +1,629 @@
+#editor.block-editor__container .editor-styles-wrapper {
+  /* Text meant only for screen readers. */
+}
+
+#editor.block-editor__container .editor-styles-wrapper .wp-block {
+    max-width: 1200px;
+    font-family: "Open Sans";
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .wp-block a {
+    color: #ecb537;
+    text-decoration: none;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .editor-post-title__block .editor-post-title__input {
+    font-family: "Poppins";
+}
+
+#editor.block-editor__container .editor-styles-wrapper p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 24px;
+}
+
+#editor.block-editor__container .editor-styles-wrapper footer .elementor-widget-text-editor p {
+    margin-bottom: 4px;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .fa, #editor.block-editor__container .editor-styles-wrapper .fab, #editor.block-editor__container .editor-styles-wrapper .fal, #editor.block-editor__container .editor-styles-wrapper .far, #editor.block-editor__container .editor-styles-wrapper .fas {
+    font-family: "Font Awesome 5 Free";
+}
+
+#editor.block-editor__container .editor-styles-wrapper p {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .head-font {
+    font-weight: 500;
+}
+
+#editor.block-editor__container .editor-styles-wrapper body div div .sc, #editor.block-editor__container .editor-styles-wrapper body div div .sc-hv:hover {
+    color: #000;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .sbrc, #editor.block-editor__container .editor-styles-wrapper .sbrc-hv:hover {
+    border-color: #000;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .sbcc, #editor.block-editor__container .editor-styles-wrapper .sbcc-hv:hover, #editor.block-editor__container .editor-styles-wrapper .training-block-slider .owl-dots button {
+    background-color: #000;
+}
+
+#editor.block-editor__container .editor-styles-wrapper body div div .dark {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+}
+
+#editor.block-editor__container .editor-styles-wrapper body .date, #editor.block-editor__container .editor-styles-wrapper body time {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#editor.block-editor__container .editor-styles-wrapper h1, #editor.block-editor__container .editor-styles-wrapper .h1,
+  #editor.block-editor__container .editor-styles-wrapper h2, #editor.block-editor__container .editor-styles-wrapper .h2,
+  #editor.block-editor__container .editor-styles-wrapper h3, #editor.block-editor__container .editor-styles-wrapper .h3,
+  #editor.block-editor__container .editor-styles-wrapper h4, #editor.block-editor__container .editor-styles-wrapper .h4,
+  #editor.block-editor__container .editor-styles-wrapper h5, #editor.block-editor__container .editor-styles-wrapper .h5,
+  #editor.block-editor__container .editor-styles-wrapper h6, #editor.block-editor__container .editor-styles-wrapper .h6 {
+    margin-top: 0;
+}
+
+#editor.block-editor__container .editor-styles-wrapper *:before, #editor.block-editor__container .editor-styles-wrapper *:after {
+    line-height: 1;
+}
+
+#editor.block-editor__container .editor-styles-wrapper h1, #editor.block-editor__container .editor-styles-wrapper .h1, #editor.block-editor__container .editor-styles-wrapper h2, #editor.block-editor__container .editor-styles-wrapper .h2, #editor.block-editor__container .editor-styles-wrapper h3, #editor.block-editor__container .editor-styles-wrapper .h3, #editor.block-editor__container .editor-styles-wrapper h4, #editor.block-editor__container .editor-styles-wrapper .h4, #editor.block-editor__container .editor-styles-wrapper h5, #editor.block-editor__container .editor-styles-wrapper .h5, #editor.block-editor__container .editor-styles-wrapper h6, #editor.block-editor__container .editor-styles-wrapper .h6, #editor.block-editor__container .editor-styles-wrapper .head-font, #editor.block-editor__container .editor-styles-wrapper nav a, #editor.block-editor__container .editor-styles-wrapper .nav-links .prev, #editor.block-editor__container .editor-styles-wrapper .nav-links .next, #editor.block-editor__container .editor-styles-wrapper .comment-author b.fn, #editor.block-editor__container .editor-styles-wrapper time, #editor.block-editor__container .editor-styles-wrapper body .date, #editor.block-editor__container .editor-styles-wrapper .reply a, #editor.block-editor__container .editor-styles-wrapper footer nav a, #editor.block-editor__container .editor-styles-wrapper .select2, #editor.block-editor__container .editor-styles-wrapper .next.page-numbers, #editor.block-editor__container .editor-styles-wrapper .prev.page-numbers, #editor.block-editor__container .editor-styles-wrapper .quantity label, #editor.block-editor__container .editor-styles-wrapper .woocommerce div.product .woocommerce-product-rating .woocommerce-review-link, #editor.block-editor__container .editor-styles-wrapper .tabs li a, #editor.block-editor__container .editor-styles-wrapper .elementor-widget-accordion .elementor-accordion .elementor-tab-title, #editor.block-editor__container .editor-styles-wrapper .contact-data, #editor.block-editor__container .editor-styles-wrapper .ui-datepicker-header .ui-datepicker-title, #editor.block-editor__container .editor-styles-wrapper .ui-datepicker table td, #editor.block-editor__container .editor-styles-wrapper .ui-datepicker table th, #editor.block-editor__container .editor-styles-wrapper .select2-results__option {
+    font-family: "Poppins";
+}
+
+#editor.block-editor__container .editor-styles-wrapper body, #editor.block-editor__container .editor-styles-wrapper h1, #editor.block-editor__container .editor-styles-wrapper .h1, #editor.block-editor__container .editor-styles-wrapper h2, #editor.block-editor__container .editor-styles-wrapper .h2, #editor.block-editor__container .editor-styles-wrapper h3, #editor.block-editor__container .editor-styles-wrapper .h3, #editor.block-editor__container .editor-styles-wrapper h4, #editor.block-editor__container .editor-styles-wrapper .h4, #editor.block-editor__container .editor-styles-wrapper h5, #editor.block-editor__container .editor-styles-wrapper .h5, #editor.block-editor__container .editor-styles-wrapper h6, #editor.block-editor__container .editor-styles-wrapper .h6, #editor.block-editor__container .editor-styles-wrapper nav a, #editor.block-editor__container .editor-styles-wrapper .stm_post-after .tags a {
+    color: #000;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .stm_post-after .tags a:hover, #editor.block-editor__container .editor-styles-wrapper .star-rating, #editor.block-editor__container .editor-styles-wrapper .pc, #editor.block-editor__container .editor-styles-wrapper .pc-hv:hover, #editor.block-editor__container .editor-styles-wrapper time, #editor.block-editor__container .editor-styles-wrapper .reply a:hover, #editor.block-editor__container .editor-styles-wrapper ul:not(.wp-block-gallery) li:before, #editor.block-editor__container .editor-styles-wrapper body.yoga a, #editor.block-editor__container .editor-styles-wrapper .coach-tabs__list .catergory-tab-link.active .category-icon i, #editor.block-editor__container .editor-styles-wrapper .coach-tabs__list .catergory-tab-link:hover .category-icon i, #editor.block-editor__container .editor-styles-wrapper nav a:hover {
+    color: #ecb537;
+}
+
+#editor.block-editor__container .editor-styles-wrapper ul.wp-block-gallery li.blocks-gallery-item {
+    padding-left: 0 !important;
+}
+
+#editor.block-editor__container .editor-styles-wrapper ul.wp-block-gallery li.blocks-gallery-item:before {
+    display: none !important;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .wp-caption.alignleft {
+    margin-bottom: 20px !important;
+}
+
+#editor.block-editor__container .editor-styles-wrapper h1, #editor.block-editor__container .editor-styles-wrapper .h1 {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 60px;
+    margin-bottom: 37px;
+    letter-spacing: -1.35px;
+}
+
+@media (max-width: 1024px) {
+    #editor.block-editor__container .editor-styles-wrapper h1, #editor.block-editor__container .editor-styles-wrapper .h1 {
+        font-size: 48px;
+        line-height: 54px;
+        letter-spacing: -1.05px;
+    }
+}
+
+@media (max-width: 480px) {
+    #editor.block-editor__container .editor-styles-wrapper h1, #editor.block-editor__container .editor-styles-wrapper .h1 {
+        font-size: 42px;
+        line-height: 48px;
+        letter-spacing: -0.9px;
+    }
+}
+
+#editor.block-editor__container .editor-styles-wrapper h2, #editor.block-editor__container .editor-styles-wrapper .h2 {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 48px;
+    margin-top: 46px;
+    margin-bottom: 28px;
+    letter-spacing: -1.05px;
+}
+
+@media (max-width: 1024px) {
+    #editor.block-editor__container .editor-styles-wrapper h2, #editor.block-editor__container .editor-styles-wrapper .h2 {
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: -0.9px;
+    }
+}
+
+@media (max-width: 480px) {
+    #editor.block-editor__container .editor-styles-wrapper h2, #editor.block-editor__container .editor-styles-wrapper .h2 {
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: -0.75px;
+    }
+}
+
+#editor.block-editor__container .editor-styles-wrapper h3, #editor.block-editor__container .editor-styles-wrapper .h3 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: 40px;
+    margin-bottom: 21px;
+    letter-spacing: -0.9px;
+}
+
+@media (max-width: 1024px) {
+    #editor.block-editor__container .editor-styles-wrapper h3, #editor.block-editor__container .editor-styles-wrapper .h3 {
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: -0.75px;
+    }
+}
+
+@media (max-width: 480px) {
+    #editor.block-editor__container .editor-styles-wrapper h3, #editor.block-editor__container .editor-styles-wrapper .h3 {
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: -0.6px;
+    }
+}
+
+#editor.block-editor__container .editor-styles-wrapper h4, #editor.block-editor__container .editor-styles-wrapper .h4 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    margin-top: 36px;
+    margin-bottom: 16px;
+    letter-spacing: -0.75px;
+}
+
+@media (max-width: 1024px) {
+    #editor.block-editor__container .editor-styles-wrapper h4, #editor.block-editor__container .editor-styles-wrapper .h4 {
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: -0.6px;
+    }
+}
+
+@media (max-width: 480px) {
+    #editor.block-editor__container .editor-styles-wrapper h4, #editor.block-editor__container .editor-styles-wrapper .h4 {
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.45px;
+    }
+}
+
+#editor.block-editor__container .editor-styles-wrapper h5, #editor.block-editor__container .editor-styles-wrapper .h5 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 31px;
+    margin-bottom: 11px;
+    letter-spacing: -0.6px;
+}
+
+@media (max-width: 1024px) {
+    #editor.block-editor__container .editor-styles-wrapper h5, #editor.block-editor__container .editor-styles-wrapper .h5 {
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.45px;
+    }
+}
+
+@media (max-width: 480px) {
+    #editor.block-editor__container .editor-styles-wrapper h5, #editor.block-editor__container .editor-styles-wrapper .h5 {
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: -0.4px;
+    }
+}
+
+#editor.block-editor__container .editor-styles-wrapper h6, #editor.block-editor__container .editor-styles-wrapper .h6 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 26px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+    #editor.block-editor__container .editor-styles-wrapper h6, #editor.block-editor__container .editor-styles-wrapper .h6 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    #editor.block-editor__container .editor-styles-wrapper h6, #editor.block-editor__container .editor-styles-wrapper .h6 {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.35px;
+    }
+}
+
+#editor.block-editor__container .editor-styles-wrapper blockquote {
+    margin-left: 0;
+    border-left: 4px #ecb537 solid;
+    padding-left: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+    font-family: "Poppins";
+    color: #000;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 40px;
+}
+
+#editor.block-editor__container .editor-styles-wrapper blockquote p {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+    font-family: "Poppins";
+    color: #000;
+}
+
+#editor.block-editor__container .editor-styles-wrapper blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+#editor.block-editor__container .editor-styles-wrapper ins {
+    text-decoration: none;
+}
+
+#editor.block-editor__container .editor-styles-wrapper ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#editor.block-editor__container .editor-styles-wrapper ul > li {
+    padding-left: 36px;
+    position: relative;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+@media (max-width: 480px) {
+    #editor.block-editor__container .editor-styles-wrapper ul > li {
+        padding-left: 25px;
+    }
+}
+
+#editor.block-editor__container .editor-styles-wrapper ul > li:before {
+    content: "\f621";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 11px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+#editor.block-editor__container .editor-styles-wrapper ol {
+    padding-left: 36px;
+}
+
+@media (max-width: 480px) {
+    #editor.block-editor__container .editor-styles-wrapper ol {
+        padding-left: 25px;
+    }
+}
+
+#editor.block-editor__container .editor-styles-wrapper ol li {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .pbcc, #editor.block-editor__container .editor-styles-wrapper .pbcc-hv:hover, #editor.block-editor__container .editor-styles-wrapper .man_sidebar .widget_mc4wp_form_widget, #editor.block-editor__container .editor-styles-wrapper .comment-form .form-submit .submit, #editor.block-editor__container .editor-styles-wrapper table thead th, #editor.block-editor__container .editor-styles-wrapper .nav-links .page-numbers.current, #editor.block-editor__container .editor-styles-wrapper .nav-links .page-numbers:hover, #editor.block-editor__container .editor-styles-wrapper .woo-sidebar .widget_text h5:before, #editor.block-editor__container .editor-styles-wrapper .woo-sidebar .widget_price_filter .ui-slider-horizontal .ui-slider-range, #editor.block-editor__container .editor-styles-wrapper .woo-sidebar .widget_price_filter .ui-slider .ui-slider-handle, #editor.block-editor__container .editor-styles-wrapper ul.products .archive-image-wrap .hidden-labels a:hover, #editor.block-editor__container .editor-styles-wrapper body.single-product .content-area .woocommerce-product-gallery .flex-control-nav li.active, #editor.block-editor__container .editor-styles-wrapper body.single-product .content-area .woocommerce-product-gallery .flex-control-nav li:hover, #editor.block-editor__container .editor-styles-wrapper .woocommerce div.product div.images .woocommerce-product-gallery__trigger:before, #editor.block-editor__container .editor-styles-wrapper .woocommerce div.product div.images .woocommerce-product-gallery__trigger:after, #editor.block-editor__container .editor-styles-wrapper .quantity .quantity-wrap .quantity-control:hover, #editor.block-editor__container .editor-styles-wrapper .woocommerce div.product form.cart .single_add_to_cart_button:hover, #editor.block-editor__container .editor-styles-wrapper .woocommerce #respond input#submit:hover, #editor.block-editor__container .editor-styles-wrapper .woocommerce a.button:hover, #editor.block-editor__container .editor-styles-wrapper .woocommerce button.button:hover, #editor.block-editor__container .editor-styles-wrapper .woocommerce input.button:hover, #editor.block-editor__container .editor-styles-wrapper .woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover, #editor.block-editor__container .editor-styles-wrapper .woocommerce button.button.alt:hover, #editor.block-editor__container .editor-styles-wrapper .wpcf7-form input[type=submit], #editor.block-editor__container .editor-styles-wrapper .training-category a::before, #editor.block-editor__container .editor-styles-wrapper .training-block-slider .owl-dots button.active, #editor.block-editor__container .editor-styles-wrapper .pbcc-before:before, #editor.block-editor__container .editor-styles-wrapper .pbcc-after:after, #editor.block-editor__container .editor-styles-wrapper .ui-datepicker .ui-datepicker-current-day, #editor.block-editor__container .editor-styles-wrapper .ui-datepicker tbody td:not(.ui-state-disabled):hover, #editor.block-editor__container .editor-styles-wrapper .stm-cart-button .count, #editor.block-editor__container .editor-styles-wrapper body.health_coach footer .elementor-widget-wp-widget-mc4wp_form_widget .mc4wp-form .mc4wp-form-fields input[type="submit"]:not(:hover), #editor.block-editor__container .editor-styles-wrapper .woocommerce .woocommerce-pagination ul.page-numbers li .page-numbers.current, #editor.block-editor__container .editor-styles-wrapper .woocommerce .woocommerce-pagination ul.page-numbers li .page-numbers:hover, #editor.block-editor__container .editor-styles-wrapper .woocommerce .woocommerce-pagination ul.page-numbers li .page-numbers.next:hover, #editor.block-editor__container .editor-styles-wrapper body.health_coach footer .elementor-widget-wp-widget-mc4wp_form_widget .mc4wp-form .mc4wp-form-fields input[type="submit"]:not(:hover), #editor.block-editor__container .editor-styles-wrapper .woocommerce .woocommerce-pagination ul.page-numbers li .page-numbers.current, #editor.block-editor__container .editor-styles-wrapper .woocommerce .woocommerce-pagination ul.page-numbers li .page-numbers:hover, #editor.block-editor__container .editor-styles-wrapper .woocommerce .woocommerce-pagination ul.page-numbers li .page-numbers.next:hover, #editor.block-editor__container .editor-styles-wrapper .training-block-slider-style_2 .training-slider .owl-nav button, #editor.block-editor__container .editor-styles-wrapper .woocommerce-grouped-product-list-item__price .amount {
+    background-color: #ecb537;
+}
+
+#editor.block-editor__container .editor-styles-wrapper table {
+    font-size: 18px;
+    border-collapse: collapse;
+    border: 1px rgba(0, 0, 0, 0.05) solid;
+    margin-bottom: 25px;
+}
+
+#editor.block-editor__container .editor-styles-wrapper table tr {
+    transition: .3s;
+}
+
+#editor.block-editor__container .editor-styles-wrapper table td, #editor.block-editor__container .editor-styles-wrapper table th {
+    padding: 12px 20px;
+    border: 1px rgba(0, 0, 0, 0.05) solid;
+}
+
+#editor.block-editor__container .editor-styles-wrapper table tr.even {
+    background-color: #f6f6f6;
+}
+
+#editor.block-editor__container .editor-styles-wrapper table thead th {
+    background-color: #ecb537;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#editor.block-editor__container .editor-styles-wrapper dl {
+    font-size: 18px;
+}
+
+#editor.block-editor__container .editor-styles-wrapper dl dt {
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+#editor.block-editor__container .editor-styles-wrapper dl dd {
+    margin-bottom: 24px;
+}
+
+#editor.block-editor__container .editor-styles-wrapper address {
+    margin-bottom: 18px;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .aligncenter,
+  #editor.block-editor__container .editor-styles-wrapper div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+#editor.block-editor__container .editor-styles-wrapper a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+#editor.block-editor__container .editor-styles-wrapper a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+#editor.block-editor__container .editor-styles-wrapper a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+#editor.block-editor__container .editor-styles-wrapper a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .hidden {
+    display: none;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 100%;
+    /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .text-center {
+    text-align: center;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+    /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+#editor.block-editor__container .editor-styles-wrapper .screen-reader-text:focus {
+    background-color: #eee;
+    clip: auto !important;
+    -webkit-clip-path: none;
+    clip-path: none;
+    color: #444;
+    display: block;
+    font-size: 1em;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */
+}
+
+#editor.block-editor__container .editor-styles-wrapper pre {
+    background: #eee;
+    font-family: monospace;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 24px;
+    max-width: 100%;
+    overflow: auto;
+    padding: 24px;
+}
+
+#editor.block-editor__container .editor-styles-wrapper code {
+    font-family: monospace;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .gallery {
+    margin: 0 auto 18px;
+    overflow: hidden;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .gallery .gallery-item {
+    float: left;
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0 10px;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .gallery .gallery-item .gallery-icon {
+    margin-bottom: 10px;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .gallery-columns-2 .gallery-item {
+    width: 50%;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .gallery-columns-3 .gallery-item {
+    width: 33.333%;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .gallery-columns-4 .gallery-item {
+    width: 25%;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .gallery-columns-5 .gallery-item {
+    width: 20%;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .gallery-columns-6 .gallery-item {
+    width: 16.666%;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .gallery-columns-7 .gallery-item {
+    width: 14.28%;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .gallery-columns-8 .gallery-item {
+    width: 12.5%;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .gallery-columns-9 .gallery-item {
+    width: 11.111%;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .gallery-columns-10 .gallery-item {
+    width: 10%;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .gallery img:hover {
+    background: white;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .gallery-columns-2 .attachment-medium {
+    max-width: 92%;
+    height: auto;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .gallery-columns-4 .attachment-thumbnail {
+    max-width: 84%;
+    height: auto;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .gallery .gallery-caption {
+    color: #888;
+    font-size: 14px;
+    margin: 0 0 12px;
+    line-height: 22px;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .gallery dl, #editor.block-editor__container .editor-styles-wrapper .gallery dt {
+    margin: 0;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .gallery br + br {
+    display: none;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .text-upper {
+    text-transform: uppercase;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .bypostauthor .comment-content {
+    font-style: italic;
+}
+
+@media (min-width: 600px) {
+    #editor.block-editor__container .editor-styles-wrapper .editor-block-list__layout .editor-block-list__block[data-align=full],
+    #editor.block-editor__container .editor-styles-wrapper .editor-block-list__layout .editor-block-list__block[data-align=full] > .editor-block-list__block-edit {
+        max-width: 100%;
+    }
+}
+
+#editor.block-editor__container .editor-styles-wrapper .wp-caption.aligncenter {
+    margin-bottom: 20px !important;
+}
+
+#editor.block-editor__container .editor-styles-wrapper .wp-block-separator {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}

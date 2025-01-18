@@ -1,0 +1,13 @@
+@media (min-width: 1200px) {
+    .elementor-widget-icon-box.icon_left .elementor-icon-box-wrapper {
+        position: relative;
+        padding-left: 80px;
+    }
+
+    .elementor-widget-icon-box.icon_left .elementor-icon-box-wrapper .elementor-icon-box-icon {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(-50%, -50%);
+    }
+}

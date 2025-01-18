@@ -1,0 +1,31 @@
+.google-maps-styled {
+    height: 516px;
+}
+
+.info-window {
+    font-size: 19px !important;
+    line-height: 28px !important;
+    padding: 8px 10px;
+}
+
+.info-window h6 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.info-window p {
+    margin-bottom: 5px;
+}
+
+.infoblock-wrap > div:first-child > div:nth-child(3) > div > div {
+    background-color: #ecb537 !important;
+}
+
+.infoblock-wrap > div:first-child > div:last-child {
+    background-color: #ecb537 !important;
+}
+
+.gmnoprint, .gm-fullscreen-control {
+    display: none;
+}
